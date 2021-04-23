@@ -4,6 +4,7 @@
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 //Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
+//oggetto
 
 var stud = {
     nome : 'Antonio',
@@ -15,7 +16,7 @@ var stud = {
 document.getElementById('stud_uno').innerHTML = 'Nome: ' + stud.nome + '<br> Cognome: ' + stud.cognome + '<br> Età: ' + stud.anni;
 
 
-
+//array di oggetti
 
 var classe = [
 {
@@ -46,7 +47,10 @@ var classe = [
 
 ]
 
+//push del primo studente
+classe.push(stud);
 
+//creo un ciclo "for in" in modo tale da stampare in html tutti gli studenti
 for (var i in classe){
     var studenti = classe[i];
     document.getElementById('stud').innerHTML += 'Nome: ' + studenti.nome + '<br>Cognome: ' + studenti.cognome + '<br>Età: ' + studenti.anni + ' anni <br><br>';
